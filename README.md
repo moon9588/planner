@@ -6,7 +6,6 @@ Java changes made:
 2. added day 
 3. added console logs
 
-
 css changes made:
 1. add red, green and gray color sections
 2. add syling to rows and save buttons
@@ -22,5 +21,3 @@ Link to github respository: https://github.com/moon9588/planner.git
 screenshot of website:
 https://github.com/moon9588/planner/blob/main/Screen%20Shot%202021-12-26%20at%2010.29.27%20PM.png
 https://github.com/moon9588/planner/blob/main/Screen%20Shot%202021-12-26%20at%2010.29.36%20PM.png
-
-
