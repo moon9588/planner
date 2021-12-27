@@ -5,7 +5,7 @@ Java changes made:
 1. added time and day
 2. added day 
 3. added console logs
-4.
+
 
 css changes made:
 1. add red, green and gray color sections
