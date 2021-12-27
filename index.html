@@ -26,13 +26,14 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+
+      <p id="currentDay" class="day">
     <script type= "text/javascript" >
       var myDate = new Date ();
       var myDay = myDate.getDay();
 
       // Array of days.
-      var weekday = ['Sunday','Monday', 'Tuesday','Wednesday','Thursday','Wednesday','Thursday','Friday','Saturday'];
+      var weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Wednesday','Thursday','Friday','Saturday'];
       document.write("Today is : " + weekday[myDay]);
       document.write("<br/>");
     </script>
@@ -46,8 +47,27 @@
     var monthNames = ['January','February','March','April', 'May', 'June','July', 'August', 'September','October','November','December'];
 
     var d = new Date();
-    document.write( monthNames[d.getmonth()]+'-'+(today.getDate())+'-'+today.getFullYear());
+    document.write( monthNames[d.getMonth()]+'-'+(today.getDate())+'-'+today.getFullYear());
 </script>
+
+  <p> Time Now: <span id= "datetime"></span></p>
+      <script>
+        var dt = new Date();
+        document.getElementById("datetime").textContent = datetime;
+
+        function refreashTime(){
+          const timeDisplay = document.getElementById("datetime");
+          const dateString = new Date ().toLocaleString()
+          const formattedstring = dateString.replace(",","-");
+          timeDisplay.textContent = formattedstring;
+        }
+      setInterval(refreashTime, 1000);
+      </script>
+      </p>
+
+
+
+
     </header>
     
     <div class="container">
@@ -65,62 +85,117 @@
     <table>
       <tr>
         <td style="width:10%">8:00 Am</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="aBtn" id="a-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="aRow" type="text" id="aText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message8()"class="aBtn" id="a-task" type="submit">Add Task</button></th>
+        <script>
+          function meassage8(){
+            var ad = document.getElementById("aText").value;
+          }
+        </script>
+        
+      
       </tr>
 
       <tr>
-        <td style="width:10%">9:00 AM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="bBtn" id="b-task" type="submit">Add Task</button></th>
+        <td styl ="width:10%">9:00 AM</td>
+        <th style="width:75%"><input class="bRow" type="text" id="bText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message9()"class="bBtn" id="bTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage9(){
+            var ad = document.getElementById("bText").value;
+          }
+        </script>
+        
       </tr>
 
       <tr>
         <td style="width:10%">10:00 AM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="cBtn" id="c-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="cRow" type="text" id="cText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message10()"class="cBtn" id="cTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage10(){
+            var ad = document.getElementById("cText").value;
+          }
+        </script>
+        
       </tr>
 
       <tr>
         <td style="width:10%">11:00 AM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="dBtn" id="d-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="dRow" type="text" id="dText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message11() "class="dBtn" id="dTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage11(){
+            var ad = document.getElementById("dText").value;
+          }
+        </script>
       </tr>
       
       <tr>
         <td style="width:10%">12:00 AM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="eBtn" id="e-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class:="eRow" type="text" id="eText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message12() "class="eBtn" id="eTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage12(){
+            var ad = document.getElementById("eText").value;
+          }
+        </script>
       </tr>
 
       <tr>
         <td style="width:10%">1:00 Pm</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="fBtn" id="f-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="fRow" type="text" id="fText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message13()" class="fBtn" id="fTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage13(){
+            var ad = document.getElementById("fText").value;
+          }
+        </script>
       </tr>
 
       <tr>
         <td style="width:10%">2:00 PM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="gBtn" id="g-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="gRow" type="text" id="gText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message14() "class="gBtn" id="gTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage14(){
+            var ad = document.getElementById("gText").value;
+          }
+        </script>
       </tr>
 
       <tr>
         <td style="width:10%">3:00 PM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="hBtn" id="h-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="hRow" type="text" id="hText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message15()" class="hBtn" id="hTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage15(){
+            var ad = document.getElementById("hText").value;
+          }
+        </script>
       </tr>
 
       <tr>
         <td style="width:10%">4:00 PM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="iBtn" id="i-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="iRow" type="text" id="iText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message16 ()" class="iBtn" id="iTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage16(){
+            var ad = document.getElementById("iText").value;
+          }
+        </script>
       </tr>
 
       <tr>
         <td style="width:10%">5:00 PM</td>
-        <th style="width:75%"><input class:"row" type:"text" id="text" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button class="jBtn" id="j-task" type="submit">Add Task</button></th>
+        <th style="width:75%"><input class="gRow" type="text" id="jText" placeholder="Enter task here" size="100"/></th>
+        <th style="width:12%"><button onclick="message17()" class="jBtn" id="jTask" type="submit">Add Task</button></th>
+        <script>
+          function meassage17(){
+            var ad = document.getElementById("jText").value;
+          }
+        </script>
+        
       </tr>
 
     </table>
