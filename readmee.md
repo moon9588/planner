@@ -1,1 +1,0 @@
-This week we created calendar application that allows the users to save events for each hour of the work day.

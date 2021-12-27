@@ -75,13 +75,12 @@ th {
   justify-content: space-around;
 }
 
-
-.row {
+/* .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
   margin-left: 0;
-}
+} */
 
 .hour {
   background-color: #ffffff;
@@ -103,7 +102,7 @@ th {
   background-color: #77dd77;
   color: white;
 }
-.aRow, .bRow, .cRow, .dRow, .eRow {
+.aRow, .bRow, .cRow, .dRow {
 white-space: pre-wrap;
 height: 80px;
 border-top: 1px solid white;
@@ -111,28 +110,20 @@ background-color: rgb(212, 207, 207);
 margin-left: 0;
 }
 
-.aRow{
+
+.eRow{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  background-color: #ffffff;
+  background-color: rgb(235, 0, 0);
   margin-left: 0;
 }
 
-
-.bRow, .cRow, .dRow, .eRow{
+.fRow, .gRow, .hRow, .iRow, .jRow {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
   background-color: #77dd77;
-  margin-left: 0;
-}
-
-.eRow, .fRow, .gRow, .hRow, .iRow, .jRow {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-  /* background-color: #77dd77; */
   margin-left: 0;
 }
 .aBtn, .bBtn, .cBtn, .dBtn, .eBtn, .fBtn, .gBtn, .hBtn, .iBtn, .jBtn{

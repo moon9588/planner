@@ -73,23 +73,17 @@
     <div class="container">
       
       <!-- Timeblocks go here -->
-      <!-- <div class="time-block">
-        <input class="hour" type="time" name="hour" placeholder="Enter hour"/>
 
-        <input class="row"  type="text" id="text" placeholder="Enter task description"/>
-
-        <button class="saveBtn" id="save-task" type="submit">Add Task</button>
-      </div>
-    </div> -->
 
     <table>
       <tr>
         <td style="width:10%">8:00 Am</td>
         <th style="width:75%"><input class="aRow" type="text" id="aText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message8()"class="aBtn" id="a-task" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message8()" class="aBtn" id="aTask" type="submit">Save Task</button></th>
         <script>
           function meassage8(){
             var ad = document.getElementById("aText").value;
+            document.write(ad);
           }
         </script>
         
@@ -99,7 +93,7 @@
       <tr>
         <td styl ="width:10%">9:00 AM</td>
         <th style="width:75%"><input class="bRow" type="text" id="bText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message9()"class="bBtn" id="bTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message9()" class="bBtn" id="bTask" type="submit">Save Task</button></th>
         <script>
           function meassage9(){
             var ad = document.getElementById("bText").value;
@@ -111,7 +105,7 @@
       <tr>
         <td style="width:10%">10:00 AM</td>
         <th style="width:75%"><input class="cRow" type="text" id="cText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message10()"class="cBtn" id="cTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message10()" class="cBtn" id="cTask" type="submit">Save Task</button></th>
         <script>
           function meassage10(){
             var ad = document.getElementById("cText").value;
@@ -123,29 +117,29 @@
       <tr>
         <td style="width:10%">11:00 AM</td>
         <th style="width:75%"><input class="dRow" type="text" id="dText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message11() "class="dBtn" id="dTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message11() "class="dBtn" id="dTask" type="submit">Save Task</button></th>
         <script>
           function meassage11(){
             var ad = document.getElementById("dText").value;
           }
         </script>
-      </tr>
-      
-      <tr>
-        <td style="width:10%">12:00 AM</td>
-        <th style="width:75%"><input class:="eRow" type="text" id="eText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message12() "class="eBtn" id="eTask" type="submit">Add Task</button></th>
-        <script>
-          function meassage12(){
-            var ad = document.getElementById("eText").value;
-          }
-        </script>
-      </tr>
+        </tr>
+
+        <tr>
+          <td style="width:10%">12:00 AM</td>
+          <th style="width:75%"><input class="eRow" type="text" id="eText" placeholder="Enter task here" size="100"/></th>
+          <th style="width:12%"><button onclick="message12() "class="eBtn" id="eTask" type="submit">Save Task</button></th>
+          <script>
+            function meassage12(){
+              var ad = document.getElementById("eText").value;
+            }
+          </script>
+        </tr>
 
       <tr>
         <td style="width:10%">1:00 Pm</td>
         <th style="width:75%"><input class="fRow" type="text" id="fText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message13()" class="fBtn" id="fTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message13()" class="fBtn" id="fTask" type="submit">Save Task</button></th>
         <script>
           function meassage13(){
             var ad = document.getElementById("fText").value;
@@ -156,7 +150,7 @@
       <tr>
         <td style="width:10%">2:00 PM</td>
         <th style="width:75%"><input class="gRow" type="text" id="gText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message14() "class="gBtn" id="gTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message14()" class="gBtn" id="gTask" type="submit">Save Task</button></th>
         <script>
           function meassage14(){
             var ad = document.getElementById("gText").value;
@@ -167,7 +161,7 @@
       <tr>
         <td style="width:10%">3:00 PM</td>
         <th style="width:75%"><input class="hRow" type="text" id="hText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message15()" class="hBtn" id="hTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message15()" class="hBtn" id="hTask" type="submit">Save Task</button></th>
         <script>
           function meassage15(){
             var ad = document.getElementById("hText").value;
@@ -178,7 +172,7 @@
       <tr>
         <td style="width:10%">4:00 PM</td>
         <th style="width:75%"><input class="iRow" type="text" id="iText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message16 ()" class="iBtn" id="iTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message16()" class="iBtn" id="iTask" type="submit">Save Task</button></th>
         <script>
           function meassage16(){
             var ad = document.getElementById("iText").value;
@@ -189,7 +183,8 @@
       <tr>
         <td style="width:10%">5:00 PM</td>
         <th style="width:75%"><input class="gRow" type="text" id="jText" placeholder="Enter task here" size="100"/></th>
-        <th style="width:12%"><button onclick="message17()" class="jBtn" id="jTask" type="submit">Add Task</button></th>
+        <th style="width:12%"><button onclick="message17()" class="jBtn" id="jTask" type="submit">Save Task</button></th>
+        
         <script>
           function meassage17(){
             var ad = document.getElementById("jText").value;
@@ -204,61 +199,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>document.getElementById("text").setAttribute('size','90');</script>
     
-    <script>var aBtn = document.querySelector("#a-task");
+    <script>var aBtn = document.querySelector("#atask");
     aBtn.addEventListener("click", function(){
      alert("A task was added for 8:00 AM ");
     });
     </script>
 
-    <script>var bBtn = document.querySelector("#b-task");
+    <script>var bBtn = document.querySelector("#btask");
     bBtn.addEventListener("click", function(){
      alert("A task was added for 9:00 AM ");
     }); 
     </script>
 
-<script>var cBtn = document.querySelector("#c-task");
+<script>var cBtn = document.querySelector("#ctask");
   cBtn.addEventListener("click", function(){
    alert("A task was added for 10:00 AM ");
   }); 
   </script>
 
-<script>var dBtn = document.querySelector("#d-task");
+<script>var dBtn = document.querySelector("#dtask");
   dBtn.addEventListener("click", function(){
    alert("A task was added for 11:00 AM ");
   }); 
   </script>
 
-<script>var eBtn = document.querySelector("#e-task");
+<script>var eBtn = document.querySelector("#etask");
   eBtn.addEventListener("click", function(){
    alert("A task was added for 12:00 AM ");
   }); 
   </script>
 
-<script>var fBtn = document.querySelector("#f-task");
+<script>var fBtn = document.querySelector("#ftask");
   fBtn.addEventListener("click", function(){
    alert("A task was added for 1:00 PM ");
   }); 
   </script>
 
-<script>var gBtn = document.querySelector("#g-task");
+<script>var gBtn = document.querySelector("#gtask");
   gBtn.addEventListener("click", function(){
    alert("A task was added for 2:00 PM ");
   }); 
   </script>
 
-<script>var hBtn = document.querySelector("#h-task");
+<script>var hBtn = document.querySelector("#htask");
   hBtn.addEventListener("click", function(){
    alert("A task was added for 3:00 PM ");
   }); 
   </script>
 
-<script>var iBtn = document.querySelector("#i-task");
+<script>var iBtn = document.querySelector("#itask");
   iBtn.addEventListener("click", function(){
    alert("A task was added for 4:00 PM ");
   }); 
   </script>
 
-<script>var jBtn = document.querySelector("#j-task");
+<script>var jBtn = document.querySelector("#jtask");
   jBtn.addEventListener("click", function(){
    alert("A task was added for 5:00 PM ");
   }); 
