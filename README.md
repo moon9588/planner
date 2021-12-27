@@ -16,10 +16,11 @@ HTML changes made:
 2. added id tags
 3. alert window
 
-Link deployed application is:
-Link to github respository:
+Link deployed application is: https://moon9588.github.io/planner/
+Link to github respository: https://github.com/moon9588/planner.git
 
 screenshot of website:
-
+https://github.com/moon9588/planner/blob/main/Screen%20Shot%202021-12-26%20at%2010.29.27%20PM.png
+https://github.com/moon9588/planner/blob/main/Screen%20Shot%202021-12-26%20at%2010.29.36%20PM.png
 
 

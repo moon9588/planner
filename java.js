@@ -33,4 +33,3 @@ Array.form(rows).forEach (row => {
         } else  {
             setColor (row, "white");
         }
-    
